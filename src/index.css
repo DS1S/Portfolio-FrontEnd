@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components { 
+    .router-link {
+        @apply hover:underline select-none transition-opacity delay-75 duration-700 ease-in-out
+    }
+
+    .social-icon {
+        @apply  hover:text-highlight text-primary transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 cursor-pointer
+    }
+}
