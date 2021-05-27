@@ -16,9 +16,9 @@ export default{
         return {
             routes: [
                 {name: "Home", active: true, path: '/'}, 
-                {name: "About", active: false, path: '/'}, 
-                {name: "Projects", active: false, path: '/'}, 
-                {name: "Experience", active: false, path: '/'}       
+                {name: "About", active: false, path: '/About'}, 
+                {name: "Projects", active: false, path: '/Projects'}, 
+                {name: "Experience", active: false, path: '/Experience'}       
             ]
         }
     },

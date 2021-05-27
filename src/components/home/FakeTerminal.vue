@@ -1,5 +1,5 @@
 <template>
-    <div class="terminal transform-gpu">
+    <div class="terminal">
         <div class="terminal-menu bg-gradient-to-tr from-bb to-lg flex-grow-0 space-x-2 rounded-sm">
             <div class="menu-button close rounded-full"></div>
             <div class="menu-button minimize rounded-full"></div>
@@ -13,9 +13,15 @@
             <p class="prompt5">daniel4531:~$ <span class="cursor">_</span></p>
 
             <div id="socials" class="flex flex-row flex-nowrap flex-grow w-full justify-center space-x-8">
-                <i class="ic self-center fab fa-github fa-3x  md:fa-4x social-icon" :style="`opacity: ${opacity};`" href="https://github.com/DS1S"></i>
-                <i class="ic self-center fab fa-linkedin-in fa-3x  md:fa-4x social-icon" :style="`opacity: ${opacity};`" href="https://www.linkedin.com/in/daniel-saunders-8b38831a8/"></i>
-                <i class="ic self-center fas fa-envelope fa-3x md:fa-4x social-icon" :style="`opacity: ${opacity};`" href="mailto: daniel.saunders@mail.utoronto.ca"></i>
+                <a href="https://github.com/DS1S" class="self-center">
+                    <i class="ic self-center fab fa-github fa-3x  md:fa-4x social-icon" :style="`opacity: ${opacity};`"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/daniel-saunders-8b38831a8/" class="self-center">
+                    <i class="ic self-center fab fa-linkedin-in fa-3x  md:fa-4x social-icon" :style="`opacity: ${opacity};`"></i>
+                </a>
+                <a href="mailto: daniel.saunders@mail.utoronto.ca" class="self-center">
+                    <i class="ic self-center fas fa-envelope fa-3x md:fa-4x social-icon" :style="`opacity: ${opacity};`"></i>
+                </a>
             </div>
         </div>
     </div>
@@ -81,26 +87,6 @@ export default {
             margin: 0px;
         }
     }
-
-    /* width */
-    ::-webkit-scrollbar {
-        width: 10px;
-        height: 10px;
-    }
-
-    /* Track */
-    ::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey;
-        border-radius: 5px;
-    }
-
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-    background: rgb(65, 45, 245);
-    border-radius: 10px;
-    }
-
-
 
     .terminal-menu {
         width: 100%;
@@ -192,6 +178,28 @@ export default {
     }
 
 
+    @media (min-width: 0px) {
+        @-webkit-keyframes type {
+            to {
+                width: 15em
+            }
+        }
+        @-moz-keyframes type {
+            to {
+                width: 15em
+            }
+        }
+        @-o-keyframes type {
+            to {
+                width: 15em
+            }
+        }
+        @keyframes type {
+            to {
+                width: 15em
+            }
+        }
+    }
     @media (min-width: 400px) {
         @-webkit-keyframes type {
             to {

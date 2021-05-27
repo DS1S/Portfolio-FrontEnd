@@ -18,7 +18,7 @@
             </i>
         </div>
     </div>
-    <div :class="['md:hidden overflow-hidden transition-all duration-500 ease-in-out flex flex-nowrap flex-inital flex-col space-y-4 subpixel-antialiased font-medium tracking-tighter text-primary bg-green-500 pt-1']" :style="heightModulator" >
+    <div :class="['md:hidden overflow-hidden transition-all duration-500 ease-in-out flex flex-nowrap flex-inital flex-col space-y-4 subpixel-antialiased font-medium tracking-tighter text-primary pt-1']" :style="heightModulator" >
         <NavBarRoutes  :opacity="opacityModulator" location="ham"/>
     </div>
   </nav>
